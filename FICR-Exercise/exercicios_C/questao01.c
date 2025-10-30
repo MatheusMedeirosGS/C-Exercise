@@ -2,21 +2,22 @@
 
 #include <stdio.h>
 #include <locale.h>
+
 int main ()
 {	
     /*Portugues*/
     setlocale(LC_ALL,"");
     
     /*Variaveis*/
-	int a, b, result;
+	int a, b, x;
 	
 	/*Entrada de dados*/
 	printf("Digite dois valores inteiros: ");
 	scanf("%i %i", &a, &b);
 	
 	/*Saida de dados*/
-	result = a*b;	
-	printf("O resultado da multiplicacao entre os dois valores é: %i\n", result);
+	x = a*b;	
+	printf("O resultado da multiplicacao entre os dois valores é: %i\n", x);
 	 		
 	return 0;
 }
