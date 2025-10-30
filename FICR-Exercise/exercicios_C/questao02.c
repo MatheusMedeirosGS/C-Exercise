@@ -1,15 +1,18 @@
-//Questao 2. Fazer um algoritmo que leia um numero e mostre o seu antecessor e o seu sucessor.
+/*Questao 2: Fazer um algoritmo que leia um numero e mostre o seu antecessor e o seu sucessor.*/
 
 #include <stdio.h>
-main ()
+#include <locale.h>
+
+int main ()
 {
+    setlocale(LC_ALL,"");
+    
 	int x;
-	printf("Digite um numero inteiro: ");
+	printf("Digite um número inteiro: ");
 	scanf("%i", &x);
 
-	printf("O antecessor desse numero e: %i\n", x - 1);
-	printf("E o sucessor desse numero e: %i\n", x + 1);
+	printf("O antecessor desse numero é: %i\n", x - 1);
+	printf("E o sucessor desse numero é: %i\n", x + 1);
 
-	system("pause");
 	return 0;
 }
