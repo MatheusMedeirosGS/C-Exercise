@@ -2,12 +2,13 @@
 
 #include <stdio.h>
 #include <locale.h>
+
 int main ()
 {
     setlocale(LC_ALL,"");
     
 	int x;
-	printf("Digite um numero inteiro: ");
+	printf("Digite um número inteiro: ");
 	scanf("%i", &x);
 
 	printf("O antecessor desse numero é: %i\n", x - 1);
