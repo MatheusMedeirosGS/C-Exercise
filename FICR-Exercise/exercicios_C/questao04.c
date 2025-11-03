@@ -1,7 +1,7 @@
 /*Questao 4: Fazer um algoritmo que calcule e mostre:
-/a) A soma entre dois numero:
-/b) O produto entre eles:
-/O quociente entre eles:*/
+a) A soma entre dois numero:
+b) O produto entre eles:
+c) O quociente entre eles:*/
 
 #include <stdio.h>
 #include <locale.h>

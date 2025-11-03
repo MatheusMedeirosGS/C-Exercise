@@ -1,5 +1,5 @@
 /*Questao 7: Fazer um algoritmo que calcule e mostre a area e o volume de um cilindro.
-/(A = 2pr(h + r), V = pr2h)*/
+(A = 2pr(h + r), V = pr2h)*/
 
 #include <stdio.h>
 #include <locale.h>
