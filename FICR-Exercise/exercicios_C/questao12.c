@@ -6,6 +6,8 @@ nos numeros 4, 5 e 6. Mostre a soma das duas medias e a media das medias.*/
 
 int main()
 {	
+    setlocale (LC_ALL,"");
+    
 	double m1 = (7.0 + 8.0 + 9.0) / 3.0;
 	double m2 = (4.0 + 5.0 + 6.0) / 3.0;
 	double soma_das_medias = m1 + m2;
