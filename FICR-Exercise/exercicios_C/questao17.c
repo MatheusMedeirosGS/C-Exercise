@@ -1,37 +1,38 @@
-//Questao 17 : Faca um algoritmo que leia dois numeros e identifique se sao iguais ou diferentes.
-//Caso eles sejam iguais, mostre uma mensagem dizendo que eles sao iguais. Caso sejam diferentes,
-//informe qual numero e o maior, e uma mensagem que sao diferentes.
+/*Questao 17: Faca um algoritmo que leia dois numeros e identifique se sao iguais ou diferentes.
+Caso eles sejam iguais, mostre uma mensagem dizendo que eles sao iguais. Caso sejam diferentes,
+informe qual numero e o maior, e uma mensagem que sao diferentes.*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
+    setlocale (LC_ALL,"");
+    
 	int num1, num2;
 
-	printf("Digite o primeiro numero inteiro: ");
+	printf("Digite o primeiro número inteiro: ");
 	scanf("%i", &num1);
 
-	printf("Digite o segundo numero inteiro: ");
+	printf("Digite o segundo número inteiro: ");
 	scanf("%i", &num2);
 
 	if (num1 == num2)
 	{
-		printf("Os numeros sao iguais. \n");
+		printf("Os numeros são iguais. \n");
 	}
 	else
 	{
-		printf("Os numeros sao diferentes. \n");
+		printf("Os numeros são diferentes. \n");
 		if (num1 > num2)
 		{
-			printf("O maior numero e: %i\n", num1);
+			printf("O maior número é: %i\n", num1);
 		}
 		else
 		{
-			printf("O maior numero e: %i\n", num2);
+			printf("O maior número é: %i\n", num2);
 		}
 	}
 
-	system("pause");
 	return 0;
 }

@@ -1,11 +1,13 @@
-//Questao 19: Escreva um algoritmo que recebe tres valores inteiros e mostre o valor do maior
-//numero digitado pelo usuario.
+/*Questao 19: Escreva um algoritmo que recebe tres valores inteiros e mostre o valor do maior
+numero digitado pelo usuario.*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
+    setlocale (LC_ALL,"");
+    
 	int num1, num2, num3;
 	int maior;
 
@@ -32,6 +34,5 @@ int main()
 
 	printf("O maior valor digitado foi: %i\n", maior);
 
-	system("pause");
 	return 0;
 }

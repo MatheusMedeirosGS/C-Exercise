@@ -1,12 +1,14 @@
-//Questao 22: Escreva um algoritmo para ler 2 valores inteiros e uma das seguintes operacoes a
-//serem executadas: 1. Adicao, 2. Subtracao, 3. Divisao e 4. Multiplicacao. Calcular e mostrar o
-//resultado da operacao.
+/*Questao 22: Escreva um algoritmo para ler 2 valores inteiros e uma das seguintes operacoes a
+serem executadas: 1. Adicao, 2. Subtracao, 3. Divisao e 4. Multiplicacao. Calcular e mostrar o
+resultado da operacao.*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
+    setlocale (LC_ALL,"");
+    
 	int v1, v2, operacao;
 	double result;
 
@@ -16,11 +18,11 @@ int main()
 	printf("Digite o segundo valor inteiro: ");
 	scanf("%i", &v2);
 
-	printf("Escolha a operacao a ser executada: \n");
-	printf("1. Adicao \n");
-	printf("2. Subtracao \n");
-	printf("3. Divisao \n");
-	printf("4. Multiplicacao \n");
+	printf("Escolha a operacão a ser executada: \n");
+	printf("1. Adição \n");
+	printf("2. Subtracão \n");
+	printf("3. Divisão \n");
+	printf("4. Multiplicação \n");
 	printf("Sua escolha: ");
 	scanf("%i", &operacao);
 
@@ -37,7 +39,7 @@ int main()
 	case 3:
 		if (v2 == 0)
 		{
-			printf("Erro: Divisao por zero nao e permitida. \n");
+			printf("Erro: Divisao por zero não é permitida. \n");
 		}
 		else
 		{
@@ -54,6 +56,5 @@ int main()
 		break;
 	}
 
-	system("pause");
 	return 0;
 }

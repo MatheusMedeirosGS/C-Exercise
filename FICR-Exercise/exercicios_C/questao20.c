@@ -1,10 +1,12 @@
-//Questao 20:  Escrever um algoritmo que leia tràes valores inteiros distintos e os escreva em ordem crescente.
+/*Questao 20: Escrever um algoritmo que leia tres valores inteiros distintos e os escreva em ordem crescente.*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
+    setlocale (LC_ALL;"");
+    
 	int a, b, c, temp;
 
 	printf("Digite o primeiro valor inteiro: ");
@@ -37,8 +39,7 @@ int main()
 		b = temp;
 	}
 
-	printf("Os valores em ordem crescente sao: %i, %i, %i\n", a, b, c);
+	printf("Os valores em ordem crescente s√£o: %i, %i, %i\n", a, b, c);
 
-	system("pause");
 	return 0;
 }

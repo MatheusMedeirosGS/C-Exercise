@@ -1,11 +1,11 @@
-//Essa daqui vai ficar sem comentario, mt coisa pra comentar
-
 #include <stdio.h>
 #include <locale.h>
 #include <ctype.h>
 
 int main()
 {
+    setlocale (LC_ALL,"");
+    
 	char class_consumidora;
 	double consumo, tarifa = 0.0;
 	double valor_fornecimento, icms, valor_a_pagar;
@@ -53,6 +53,5 @@ int main()
 		printf("Valor Total a Pagar (VP): R$ %.2f\n", valor_a_pagar);
 	}
 
-	system("pause");
 	return 0;
 }
