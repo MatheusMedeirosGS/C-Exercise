@@ -1,4 +1,4 @@
-/*Questão 41. Escreva um programa que calcule as n primeiras potências do número k. Para n =
+/*Questao 41: Escreva um programa que calcule as n primeiras potencias do numero k. Para n =
 3 e k = 2 teremos:
 ? 2 elevado a 1 = 2
 ? 2 elevado a 2 = 4
@@ -10,15 +10,13 @@
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     
     int n, k = 2;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     for(n = 1; n <= 3; n++){
         printf("%d elevado a %d = %.2f\n", k, n, pow(k, n));
     }
-    printf("-------------------------------------------------------------------------------------------------------------");
     
     return 0;
 }

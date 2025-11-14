@@ -1,4 +1,4 @@
-/*Questão 35. Construa um algoritmo que calcule e mostre o valor de H, sendo H calculado por:
+/*Questao 35: Construa um algoritmo que calcule e mostre o valor de H, sendo H calculado por:
 H = 1 + 2 + 3 + 4 + ... + N*/
 
 #include <stdio.h>
@@ -6,11 +6,10 @@ H = 1 + 2 + 3 + 4 + ... + N*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     
     int n, i, H = 0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     printf("Digite o valor de N: ");
     scanf("%d", &n);
 
@@ -18,8 +17,7 @@ int main()
         H += i; 
     }
 
-    printf("O valor de H é: %d", H);
-    printf("\n-------------------------------------------------------------------------------------------------------------");
+    printf("O valor de H Ã©: %d", H);
     
     return 0;
 }

@@ -1,4 +1,4 @@
-/*Calcular e mostrar a média aritmética dos números pares compreendidos entre 13
+/*Calcular e mostrar a media aritmetica dos numeros pares compreendidos entre 13
 e 73*/
 
 #include <stdio.h>
@@ -6,11 +6,10 @@ e 73*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     
     int i, divisor = 0, dividendo = 0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     for(i = 13; i < 73; i++){
         if(i%2 == 0){
             dividendo += i;
@@ -18,8 +17,7 @@ int main()
         }
     }
 
-    printf("A média aritmética é: %.2f", (float)dividendo/divisor);
-    printf("\n-------------------------------------------------------------------------------------------------------------");
+    printf("A mÃ©dia aritmÃ©tica Ã© %.2f", (float)dividendo/divisor);
     
     return 0;
 }

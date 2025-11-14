@@ -1,31 +1,29 @@
-/*Questão 38. Faça um algoritmo que leia um valor x, calcule e mostre os 20 primeiros termos
-da série:*/
+/*Questao 38: Faca um algoritmo que leia um valor x, calcule e mostre os 20 primeiros termos
+da serie:*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
 
     int x, i;
     float S = 0.0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
-    printf("Digite o valor de x que não esteja no intervalo [1,20]: ");
+    printf("Digite o valor de x que nÃ£o esteja no intervalo [1,20]: ");
     scanf("%d", &x);
 
     if (x >= 1 && x <= 20)
     {
-        printf("O valor de x quando subtraído por algum número do intervalo [1,20] resultará em 0 e não existe divisão por 0;");
+        printf("O valor de x quando subtraido por algum nÃºmero do intervalo [1,20] resultarÃ¡ em 0 e nÃ£o existe divisÃ£o por 0 ;");
     } else{
         for (i = 1; i <= 20; i++)
         {
             S += (float)1 / (x - i);
         }
-        printf("O resultado é: %.2f", S);
+        printf("O resultado Ã©: %.2f", S);
     }
-    printf("\n-------------------------------------------------------------------------------------------------------------");
 
     return 0;
 }

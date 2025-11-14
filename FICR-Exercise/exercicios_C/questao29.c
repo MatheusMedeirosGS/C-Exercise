@@ -1,28 +1,26 @@
-/*Questão 29. Fazer um algoritmo que leia 5 números e verifique se ele está entre 100 e 200.
-Se estiver na faixa, mostrar ?Você digitou um número entre 100 e 200?, se não estiver na faixa,
-mostrar ?Você digitou um número fora da faixa entre 100 e 200?.*/
+/*Questao 29: Fazer um algoritmo que leia 5 numeros e verifique se ele esta entre 100 e 200.
+Se estiver na faixa, mostrar ?Voce digitou um numero entre 100 e 200?, se nao estiver na faixa,
+mostrar? Voce digitou um numero fora da faixa entre 100 e 200?.*/
 
 #include <stdio.h>
 #include <locale.h>
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     
     int n, i;
-
-    printf("-------------------------------------------------------------------------------------------------------------\n");
+ 
     for(i = 0; i < 5; i++){
-        printf("Digite algum número: ");
+        printf("Digite algum nÃºmero: ");
         scanf("%d", &n);
 
         if(100 < n && n < 200){
-            printf("Você digitou um número entre 100 e 200\n");
+            printf("VocÃª digitou um nÃºmero entre 100 e 200\n");
         } else{
-            printf("Você digitou um número fora da faixa entre 100 e 200\n");
+            printf("VocÃª digitou um nÃºmero fora da faixa entre 100 e 200\n");
         }
     }
-    printf("-------------------------------------------------------------------------------------------------------------");
     
     return 0;
 }

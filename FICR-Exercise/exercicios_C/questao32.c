@@ -1,4 +1,4 @@
-/*Questão 32. Construa um algoritmo que leia um conjunto de 20 números inteiros e mostre qual
+/*Questao 32. Construa um algoritmo que leia um conjunto de 20 numeros inteiros e mostre qual
 foi o maior valor fornecido.*/
 
 #include <stdio.h>
@@ -6,25 +6,23 @@ foi o maior valor fornecido.*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
 
-    int i, n, maiorNumero;
+    int i, n, maiornum;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     for(i = 0; i < 20; i++){
         printf("Digite algum valor: ");
         scanf("%d", &n);
 
         if(i == 0){
-            maiorNumero = n;
+            maiornum = n;
         }
 
-        if(maiorNumero <= n){
-            maiorNumero = n;
+        if(maiornum <= n){
+            maiornum = n;
         }
     }
-    printf("\nO maior número é %d", maiorNumero);
-    printf("\n-------------------------------------------------------------------------------------------------------------");
+    printf("\nO maior nÃºmero Ã© %d", maiornum);
 
     return 0;
 }
