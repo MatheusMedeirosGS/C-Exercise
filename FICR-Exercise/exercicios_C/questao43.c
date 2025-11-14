@@ -1,5 +1,5 @@
-/*Questão 43. Um determinado material radioativo perde metade de sua massa a cada 50 segun-
-dos. Dada a massa inicial, em gramas, fazer um programa que determine o tempo necessário
+/*Questao 43. Um determinado material radioativo perde metade de sua massa a cada 50 segun-
+dos. Dada a massa inicial, em gramas, fazer um programa que determine o tempo necessario
 para que essa massa se torne menor do que 0.5 gramas. Escrever a massa inicial, a massa final
 e o tempo calculado em segundos.*/
 
@@ -9,12 +9,11 @@ e o tempo calculado em segundos.*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
 
     int tempo = 0;
     float massaIncial, massaFinal = 0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     printf("Digite a massa inicial do material radioativo em gramas: ");
     scanf("%f", &massaIncial);
 
@@ -26,10 +25,9 @@ int main()
         } while(massaFinal >= 0.5);
         printf("\nA massa inicial de %.2fg foi para %.2f em %ds.", massaIncial, massaFinal, tempo);
     } else{
-        printf("A massa inicial de %.2f já é menor a 0.5g.", massaIncial);
+        printf("A massa inicial de %.2f j Ã© menor a 0.5g.", massaIncial);
     }
     
-    printf("\n-------------------------------------------------------------------------------------------------------------");
 
     return 0;
 }

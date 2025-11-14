@@ -1,5 +1,5 @@
-/*Questão 44. Construa um algoritmo que leia vários números inteiros e positivos, calculando ao
-final da sequência a soma e a média desses números. A sequência termina quando o usuário
+/*Questao 44. Construa um algoritmo que leia varios numeros inteiros e positivos, calculando ao
+final da sequencia a soma e a media desses numeros. A sequencia termina quando o usuario
 digitar um valor negativo.*/
 
 #include <stdio.h>
@@ -8,11 +8,10 @@ digitar um valor negativo.*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int x, numerador = 0;
     float denominador = 0.0, quociente = 0.0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
     do{
         printf("Digite um valor sendo um inteiro positivo: ");
         scanf("%d", &x);
@@ -28,8 +27,7 @@ int main()
         quociente = numerador/denominador;
     }
     
-    printf("O resultado das somas é %d e sua média é %.2f.", numerador, quociente);
-    printf("\n-------------------------------------------------------------------------------------------------------------");
+    printf("O resultado das somas Ã© %d e sua mÃ©dia Ã©: %.2f.", numerador, quociente);
 
     return 0;
 }

@@ -1,5 +1,5 @@
-/*Questão 45. Construa um algoritmo que apresente a tabuada de um número N. O valor de N
-será fornecido pelo usuário.*/
+/*Questao 45. Construa um algoritmo que apresente a tabuada de um numero N. O valor de N
+sera fornecido pelo usuario.*/
 
 #include <stdio.h>
 #include <locale.h>
@@ -7,11 +7,10 @@ será fornecido pelo usuário.*/
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int N, i, produto;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
-    printf("Digite um número para a tabuada: ");
+    printf("Digite um nÃºmero para a tabuada: ");
     scanf("%d", &N);
     printf("\n");
     
@@ -20,7 +19,6 @@ int main()
         printf("%d x %d = %d\n", N, i, produto);
     }
     
-    printf("\n-------------------------------------------------------------------------------------------------------------");
 
     return 0;
 }

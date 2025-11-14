@@ -1,7 +1,7 @@
-/*Questão 46. Faça um algoritmo para calcular n! (fatorial de um número n), sendo que o valor
-de n é fornecido pelo usuário. Sabe-se que:
+/*Questao 46. Faca um algoritmo para calcular n! (fatorial de um numero n), sendo que o valor
+de n e fornecido pelo usuario. Sabe-se que:
 n! = 1 ? 2 ? 3 ? ... ? (n ? 1) ? n
-0! = 1, por definição.*/
+0! = 1, por definido.*/
 
 #include <stdio.h>
 #include <locale.h>
@@ -9,12 +9,11 @@ n! = 1 ? 2 ? 3 ? ... ? (n ? 1) ? n
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int i, n;
     double fatorial = 1.0;
 
-    printf("-------------------------------------------------------------------------------------------------------------\n");
-    printf("Digite um número para calcular o fatorial: ");
+    printf("Digite um nÃºmero para calcular o fatorial: ");
     scanf("%d", &n);
     printf("\n");
 
@@ -23,12 +22,10 @@ int main()
             fatorial *= i;
         }
 
-        printf("%d! é %.0lf", n, fatorial);
+        printf("%d! Ã© %.0lf", n, fatorial);
     } else{
-        printf("Não existe fatorial para número negativo.");
+        printf("NÃ£o existe fatorial para nÃºmero negativo.");
     }
-
-    printf("\n-------------------------------------------------------------------------------------------------------------");
 
     return 0;
 }
