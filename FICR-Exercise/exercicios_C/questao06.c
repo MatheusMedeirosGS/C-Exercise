@@ -1,4 +1,4 @@
-/*Questao 6 Faca um algoritmo que recebe o valor do raio de um circulo e apresenta o valor da area desse circulo.*/
+/*Questao 6: Faca um algoritmo que recebe o valor do raio de um circulo e apresenta o valor da area desse circulo.*/
 
 #include <stdio.h>
 #include <locale.h>
